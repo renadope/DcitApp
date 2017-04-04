@@ -11,6 +11,6 @@ public class LandingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
-        Log.d(TAG, "onCreate: Hello");
+        Log.d(TAG, "onCreate: Test From VCS");
     }
 }
