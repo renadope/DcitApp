@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/comp3000"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="COMP 3000" />
+        <item
+            android:id="@+id/comp3100"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="COMP 3100" />
+        <item
+            android:id="@+id/comp3550"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="COMP 3550" />
+        <item
+            android:id="@+id/comp3150"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="COMP 3150" />
+        <item
+            android:id="@+id/comp3850"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="COMP 3850" />
+        <item
+            android:id="@+id/comp3250"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="COMP 3250" />
+        <item
+            android:id="@+id/comp3275"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="COMP 3275" />
+        <item
+            android:id="@+id/comp3950"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="COMP 3950" />
+
+        <item
+            android:id="@+id/comp3990"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="COMP 3990" />
+    </group>
+
+</menu>

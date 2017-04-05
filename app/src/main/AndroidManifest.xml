@@ -16,7 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomepageActivity"></activity>
+        <activity android:name=".HomepageActivity" />
+        <activity
+            android:name=".ComputerScienceActivity"
+            android:label="@string/title_activity_computer_science"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InformationTechnologyActivity"
+            android:label="@string/title_activity_information_technology"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
