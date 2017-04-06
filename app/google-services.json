@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1032895587144",
+    "firebase_url": "https://dcitapp.firebaseio.com",
+    "project_id": "dcitapp",
+    "storage_bucket": "dcitapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032895587144:android:b7a22582f7d73eee",
+        "android_client_info": {
+          "package_name": "com.dcit_remake.comp3275_group_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032895587144-a3frl2q1vlfen3b8nu8fucumq33aj6cp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcit_remake.comp3275_group_project",
+            "certificate_hash": "eac306d12c92627b5a5e5beddcb56b75a4387775"
+          }
+        },
+        {
+          "client_id": "1032895587144-u5il38i4v7rlnp6lid01i6bqcq2p5ebn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAOYNeC8aUbBxqh2h_7tvJ_WGNQgok6E4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032895587144-u5il38i4v7rlnp6lid01i6bqcq2p5ebn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
