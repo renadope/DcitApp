@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">COMP3275_GROUP_PROJECT</string>
+    <string name="landing_activity_app_name">
+        DCIT APP
+    </string>
+    <string name="landing_activity_welcome">
+        Welcome!
+    </string>
+    <string name="landing_activity_description">
+        This is a mobile version of the Department of Computing and Information Technology website
+    </string>
+    <string name="homepage_activity_select">
+        Select a BSc. Programme to see the level three (3) courses avaiable
+    </string>
+
+    <string name="computer_science">
+        Computer Science (Special)
+    </string>
+
+    <string name="information_technology">
+        Information Technology (Special)
+    </string>
+    <string name="title_activity_computer_science">ComputerScienceActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_information_technology">InformationTechnologyActivity</string>
 </resources>

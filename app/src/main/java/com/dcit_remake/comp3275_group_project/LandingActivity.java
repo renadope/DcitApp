@@ -1,8 +1,10 @@
 package com.dcit_remake.comp3275_group_project;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -12,5 +14,10 @@ public class LandingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landing);
         Log.d(TAG, "onCreate: Test From VCS");
+    }
+
+    public void goToHomepage(View view){
+        Intent intent = new Intent(getApplicationContext(), HomepageActivity.class);
+        startActivity(intent);
     }
 }
