@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:orientation="vertical"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+
+<!--</LinearLayout>-->
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/article_detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/md_keylines"
+            android:paddingRight="@dimen/md_keylines"
+            android:paddingTop="@dimen/md_keylines"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/courseCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Course Name"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/CourseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Design And Analysis Of Algorithms"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Level"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/actualLevelNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="400"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/semesterOffered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Semester Offered: 2"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/CreditsView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Number Of Credits"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/coursecredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="serif"
+                android:text="4000"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/typeview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="Type Of Course"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/coursetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif"
+                android:text="Apple"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="14sp"/>
+
+            <include layout="@layout/coursedesc_divider"/>
+
+            <TextView
+                android:id="@+id/courseDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="serif"
+                android:text="At a time when computers are playing an ever-increasing role in our daily lives, there is a never-ending search for better algorithms to solve problems. ‘Better’ can mean faster, use less storage, use storage more efficiently or solve a more general class of problems.\n\nThis course covers some fundamental algorithm-design techniques which can be used to formulate the solutions to a wide variety of problems. It also covers techniques for analyzing algorithms to determine their space/time requirements so that judicious choices can be made in solving any given problem."
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"/>
+
+            <include layout="@layout/topics_divider"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/topicsrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

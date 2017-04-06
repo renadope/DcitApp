@@ -28,6 +28,8 @@
             android:name=".RevisedHomePageActivity"
             android:label="@string/title_activity_revised_home_page">
         </activity>
+        <activity android:name=".TempActivity">
+        </activity>
     </application>
 
 </manifest>
