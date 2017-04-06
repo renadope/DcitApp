@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dcit_remake.comp3275_group_project">
+          package="com.dcit_remake.comp3275_group_project">
 
     <application
         android:allowBackup="true"
@@ -11,20 +11,23 @@
         android:theme="@style/AppTheme">
         <activity android:name=".LandingActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".HomepageActivity" />
         <activity
             android:name=".ComputerScienceActivity"
             android:label="@string/title_activity_computer_science"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".InformationTechnologyActivity"
             android:label="@string/title_activity_information_technology"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".RevisedHomePageActivity"
+            android:label="@string/title_activity_revised_home_page">
+        </activity>
     </application>
 
 </manifest>

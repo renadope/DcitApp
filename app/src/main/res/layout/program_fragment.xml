@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.dcit_remake.comp3275_group_project.HomepageActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -18,35 +16,33 @@
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp" />
+        tools:layout_editor_absoluteY="1dp"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/compSciButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/titleText"
         android:layout_marginTop="99dp"
         android:background="@color/colorPrimary"
-        android:onClick="goToCompSci"
         android:text="@string/computer_science"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="24sp" />
+        android:textSize="24sp"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ITButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/button2"
+        android:layout_below="@+id/compSciButton"
         android:layout_marginTop="84dp"
         android:background="@color/colorPrimary"
-        android:onClick="goToIT"
         android:text="@string/information_technology"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="24sp" />
+        android:textSize="24sp"/>
 </RelativeLayout>

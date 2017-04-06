@@ -29,7 +29,7 @@ public class ComputerScienceActivity extends AppCompatActivity
             public void onClick(View view) {
                 //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         //.setAction("Action", null).show();
-                Intent intent = new Intent(getApplicationContext(), HomepageActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RevisedHomePageActivity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +37,7 @@ public class ComputerScienceActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
