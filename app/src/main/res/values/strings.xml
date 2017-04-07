@@ -10,7 +10,7 @@
         This is a mobile version of the Department of Computing and Information Technology website
     </string>
     <string name="homepage_activity_select">
-        Select a BSc. Programme to see the level three (3) courses avaiable
+        Select a BSc. Programme to see the level three (3) courses available
     </string>
 
     <string name="computer_science">
@@ -27,7 +27,7 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_information_technology">InformationTechnologyActivity</string>
-    <string name="title_activity_revised_home_page">RevisedHomePageActivity</string>
+    <string name="title_activity_revised_home_page">Welcome</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>

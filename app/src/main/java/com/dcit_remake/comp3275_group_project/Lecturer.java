@@ -55,4 +55,131 @@ class Lecturer implements Serializable
         mUrlToProfilePicture = urlToProfilePicture;
     }
 
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    public String getPosition()
+    {
+        return position;
+    }
+
+    public void setPosition(String position)
+    {
+        this.position = position;
+    }
+
+    public ArrayList<String> getEducation()
+    {
+        return education;
+    }
+
+    public void setEducation(ArrayList<String> education)
+    {
+        this.education = education;
+    }
+
+    public String getAcademicRole()
+    {
+        return academicRole;
+    }
+
+    public void setAcademicRole(String academicRole)
+    {
+        this.academicRole = academicRole;
+    }
+
+    public ArrayList<String> getAreasOfInterest()
+    {
+        return areasOfInterest;
+    }
+
+    public void setAreasOfInterest(ArrayList<String> areasOfInterest)
+    {
+        this.areasOfInterest = areasOfInterest;
+    }
+
+    public String getOfficecontact()
+    {
+        return officecontact;
+    }
+
+    public void setOfficecontact(String officecontact)
+    {
+        this.officecontact = officecontact;
+    }
+
+    public String getContactextension()
+    {
+        return contactextension;
+    }
+
+    public void setContactextension(String contactextension)
+    {
+        this.contactextension = contactextension;
+    }
+
+    public String getSmsContact()
+    {
+        return smsContact;
+    }
+
+    public void setSmsContact(String smsContact)
+    {
+        this.smsContact = smsContact;
+    }
+
+    public String getRoom()
+    {
+        return room;
+    }
+
+    public void setRoom(String room)
+    {
+        this.room = room;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
+    }
+
+    public String getUrlToProfilePicture()
+    {
+        return mUrlToProfilePicture;
+    }
+
+    public void setUrlToProfilePicture(String urlToProfilePicture)
+    {
+        mUrlToProfilePicture = urlToProfilePicture;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Lecturer{" +
+                "name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", education=" + education +
+                ", academicRole='" + academicRole + '\'' +
+                ", areasOfInterest=" + areasOfInterest +
+                ", officecontact='" + officecontact + '\'' +
+                ", contactextension='" + contactextension + '\'' +
+                ", smsContact='" + smsContact + '\'' +
+                ", room='" + room + '\'' +
+                ", email='" + email + '\'' +
+                ", mUrlToProfilePicture='" + mUrlToProfilePicture + '\'' +
+                '}';
+    }
 }
