@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,7 +18,7 @@ import android.view.View;
 public class InformationTechnologyActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
-
+    private static final String KEY = "COURSE_CODE";
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -46,6 +48,7 @@ public class InformationTechnologyActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        displaySelectedItem(R.id.info3400);
     }
 
     @Override
@@ -91,25 +94,66 @@ public class InformationTechnologyActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item)
     {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        displaySelectedItem(item.getItemId());
+        return true;
+    }
 
-//        if (id == R.id.nav_camera) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
+    private void displaySelectedItem(int id)
+    {
+        Fragment fragment = null;
+        Bundle bundle = new Bundle();
+        switch (id)
+        {
+            case R.id.info3400:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3400");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3410:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3410");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3415:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3415");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3425:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3425");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3435:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3435");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3440:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3440");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3490:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3490");
+                fragment.setArguments(bundle);
+                break;
+            case R.id.info3500:
+                fragment = new CompFragment();
+                bundle.putString(KEY, "INFO3500");
+                fragment.setArguments(bundle);
+                break;
 
+        }
+
+        if (fragment != null)
+        {
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.frame, fragment);
+            fragmentTransaction.commit();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
-        return true;
     }
 }
