@@ -11,26 +11,27 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
+        android:layout_above="@+id/textView"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:srcCompat="@drawable/uwilogo"
-        android:contentDescription="@string/university_logo"/>
+        android:contentDescription="@string/university_logo"
+        app:srcCompat="@drawable/uwilogolnadingpage" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView"
         android:background="@color/primary_light"
         android:text="@string/landing_activity_app_name"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/button"
@@ -50,15 +51,15 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
         android:background="@color/primary_light"
         android:text="@string/landing_activity_welcome"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:id="@+id/textView3"
@@ -66,7 +67,6 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/button"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
         android:background="@color/primary_light"
         android:text="@string/landing_activity_description"
         android:textAlignment="center"
