@@ -17,6 +17,15 @@
         Computer Science (Special)
     </string>
 
+    <string name="computer_science_drawer_heading">
+        Level three (3) Comp Sci Courses
+    </string>
+
+
+    <string name="information_technology_drawer_heading">
+         Level three (3) I.T Courses
+    </string>
+
     <string name="information_technology">
         Information Technology (Special)
     </string>
