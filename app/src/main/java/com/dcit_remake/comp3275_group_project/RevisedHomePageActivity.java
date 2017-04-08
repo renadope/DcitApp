@@ -36,6 +36,7 @@ public class RevisedHomePageActivity extends AppCompatActivity
                 fragment = new NewsFragment();
                 break;
             case R.id.Staff:
+                fragment = new LecturerFragment();
                 break;
         }
 
