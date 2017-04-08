@@ -82,20 +82,81 @@
                 android:textStyle="italic"
                 tools:text="Subtitle"/>
 
+            <include layout="@layout/educationdividah"/>
 
-            <!--<TextView-->
-                <!--android:id="@+id/articleData"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="start"-->
-                <!--android:layout_marginBottom="16dp"-->
-                <!--android:layout_marginTop="32dp"-->
-                <!--android:fontFamily="serif"-->
-                <!--android:textAlignment="textStart"-->
-                <!--android:textColor="@color/colorPrimaryText"-->
-                <!--android:textSize="18sp"-->
-                <!--tools:text="ArticleData"/>-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/edurv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"/>
 
+            <include layout="@layout/interestdividah"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/intrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="16dp"/>
+
+            <include layout="@layout/kontakdividah"/>
+
+            <TextView
+                android:id="@+id/emailtv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="@string/email"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="serif"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="16sp"
+                tools:text="ArticleData"/>
+
+            <TextView
+                android:id="@+id/officekontak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="serif"
+                android:text="@string/office_contact"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="serif"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="16sp"
+                tools:text="ArticleData"/>
+
+            <include layout="@layout/buttons"/>
 
         </LinearLayout>
 

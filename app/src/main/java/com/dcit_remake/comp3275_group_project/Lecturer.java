@@ -47,7 +47,7 @@ class Lecturer implements Serializable
         this.education = education;
         this.academicRole = academicRole;
         this.areasOfInterest = areasOfInterest;
-        this.officecontact = "+1(868)662-2002";
+        this.officecontact = "+1(868) 662-2002";
         this.contactextension = contactextension;
         this.smsContact = smsContact;
         this.room = room;

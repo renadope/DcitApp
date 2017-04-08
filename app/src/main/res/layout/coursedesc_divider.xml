@@ -7,7 +7,7 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/articlePhotosDivider"
+        android:id="@+id/courseDivider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -25,8 +25,8 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_toLeftOf="@id/articlePhotosDivider"
-        android:layout_toStartOf="@id/articlePhotosDivider"
+        android:layout_toLeftOf="@id/courseDivider"
+        android:layout_toStartOf="@id/courseDivider"
         android:background="@color/colorDivider"
         />
 
@@ -36,8 +36,8 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
-        android:layout_toEndOf="@id/articlePhotosDivider"
-        android:layout_toRightOf="@id/articlePhotosDivider"
+        android:layout_toEndOf="@id/courseDivider"
+        android:layout_toRightOf="@id/courseDivider"
         android:background="@color/colorDivider"
         />
 </RelativeLayout>

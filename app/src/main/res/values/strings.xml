@@ -39,4 +39,6 @@
     <string name="semoffer">Semester Offered:</string>
     <string name="course_name">Course Name</string>
     <string name="lecturereimage">Lecturer Image</string>
+    <string name="email">Email:</string>
+    <string name="office_contact">Office Contact</string>
 </resources>
