@@ -53,6 +53,25 @@ class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder>
                 goToActualArticle(news);
             }
         });
+
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener()
+        {
+            @Override
+            public boolean onLongClick(View v)
+            {
+                sharedIntent();
+                return true;
+            }
+        });
+    }
+
+    private void sharedIntent()
+    {
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "DCIT News Page: " + "https://sta.uwi.edu/fst/dcit/news.asp");
+        shareIntent.setType("text/plain");
+        mContext.startActivity(Intent.createChooser(shareIntent, "Share With.."));
     }
 
     private void goToActualArticle(News news)

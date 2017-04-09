@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -54,9 +55,14 @@ public class RevisedHomePageActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_revised_home_page);
         displaySelectedItem(R.id.programmes);
-
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        ActionBar supportActionBar = getSupportActionBar();
+        if (supportActionBar != null)
+        {
+            supportActionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
     }
 
 }

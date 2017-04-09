@@ -30,16 +30,29 @@
         <activity
             android:name=".RevisedHomePageActivity"
             android:label="@string/title_activity_revised_home_page">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dcit_remake.comp3275_group_project.LandingActivity" >
+            </meta-data>
         </activity>
         <activity android:name=".TempActivity">
+
         </activity>
         <activity
             android:name=".NewsDetailActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dcit_remake.comp3275_group_project.RevisedHomePageActivity" >
+            </meta-data>
         </activity>
         <activity
             android:name=".LecturerDetailActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dcit_remake.comp3275_group_project.RevisedHomePageActivity" >
+            </meta-data>
         </activity>
     </application>
 

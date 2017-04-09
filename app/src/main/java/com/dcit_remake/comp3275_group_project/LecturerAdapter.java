@@ -52,12 +52,30 @@ class LecturerAdapter extends RecyclerView.Adapter<LecturerAdapter.LecturerViewH
             @Override
             public boolean onLongClick(View v)
             {
-                Intent intent = new Intent(mContext, LecturerDetailActivity.class);
-                intent.putExtra("LECTURER", lecturer);
-                mContext.startActivity(intent);
+                sharedIntent();
                 return true;
             }
         });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(mContext, LecturerDetailActivity.class);
+                intent.putExtra("LECTURER", lecturer);
+                mContext.startActivity(intent);
+            }
+        });
+    }
+
+    private void sharedIntent()
+    {
+        Intent shareIntent = new Intent();
+        shareIntent.setAction(Intent.ACTION_SEND);
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "DCIT Staff Page: " + "https://sta.uwi.edu/fst/dcit/staff.asp");
+        shareIntent.setType("text/plain");
+        mContext.startActivity(Intent.createChooser(shareIntent, "Share With.."));
     }
 
     @Override

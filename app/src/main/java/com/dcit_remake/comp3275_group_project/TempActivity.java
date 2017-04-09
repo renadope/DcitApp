@@ -7,8 +7,6 @@ import android.view.View;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
 public class TempActivity extends AppCompatActivity
 {
     private static final String TAG = "TempActivity";
@@ -34,23 +32,39 @@ public class TempActivity extends AppCompatActivity
 //        final Course courseToPush = new Course("Core", "INFO3490", "2323", "Project", 3, 4, preReqs, Topics,
 //                "This course provides broad coverage of e-commerce systems. It covers the various e-commerce business models and e-commerce payment systems.",
 //                "Put Lecturer Name Here", "Put His ID here");
-//       final News news = new News("Christian John Has Broken History Records As The SportJunkie Website has become a BlockBuster Success",
-//                "http://az616578.vo.msecnd.net/files/2016/06/10/636011804533596877279417241_o-SUCCESS-facebook-3.jpg","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a quam at lacus convallis scelerisque non at odio. Suspendisse non congue urna. Etiam molestie elementum venenatis. Integer lacinia finibus justo, non cursus quam ullamcorper at. Phasellus vitae ex massa. Etiam pretium nunc nibh, at luctus ex volutpat vel. Phasellus lacinia massa fringilla, molestie elit ut, ornare nisl. Sed auctor risus urna, eu sagittis elit tristique at. Phasellus malesuada nec leo non feugiat. Duis et pulvinar tortor. Donec nec vestibulum ligula, a malesuada risus.\n" +
-//                "\n" +
-//                "Phasellus gravida rhoncus suscipit. Sed bibendum rutrum purus quis sollicitudin. Aliquam lacus erat, malesuada a varius non, viverra vel nibh. Proin ut vestibulum tellus. Sed suscipit finibus enim non bibendum. Etiam enim ex, malesuada sed mattis quis, cursus vitae risus. In posuere ex ut felis pharetra varius. Aliquam dictum molestie urna, at sollicitudin mauris posuere et. Aliquam efficitur malesuada felis, a fringilla turpis euismod sed. Donec vel ornare ex. Sed finibus leo mauris, non finibus odio dignissim sit amet.");
-//
-//        final DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("NEWS");
 
-        ArrayList<String> education = new ArrayList<>();
-        education.add("BSc (UWI)");
-        education.add("MSc(Sask)");
-        education.add("PhD (UWI)");
-        ArrayList<String> areasOfInterest = new ArrayList<>();
-        areasOfInterest.add("Advanced Learning Technolgies");
-        areasOfInterest.add("Mobile Learning");
-        final Lecturer lecturer = new Lecturer("Dr. Permanand Mohan", "Head Of Department, Programme Coordinator", education,
-                "Senior Lecturer", areasOfInterest, "83101", "7272727", "Room 315", "permanand.mohan@sta.uwi.edu", "Insert Link To Image Here");
-        final DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("TEST");
+
+        final News news = new News("First Citizens DCIT Internship",
+                "https://www.firstcitizenstt.com/personal-banking/logoParagraph/logoSrc/fc-personal-logo.png",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a quam at lacus convallis scelerisque non at odio. Suspendisse non congue urna. Etiam molestie elementum venenatis. Integer lacinia finibus justo, non cursus quam ullamcorper at. Phasellus vitae ex massa. Etiam pretium nunc nibh, at luctus ex volutpat vel. Phasellus lacinia massa fringilla, molestie elit ut, ornare nisl. Sed auctor risus urna, eu sagittis elit tristique at. Phasellus malesuada nec leo non feugiat. Duis et pulvinar tortor. Donec nec vestibulum ligula, a malesuada risus.\n" +
+                        "\n" +
+                        "Phasellus gravida rhoncus suscipit. Sed bibendum rutrum purus quis sollicitudin. Aliquam lacus erat, malesuada a varius non, viverra vel nibh. Proin ut vestibulum tellus. Sed suscipit finibus enim non bibendum. Etiam enim ex, malesuada sed mattis quis, cursus vitae risus. In posuere ex ut felis pharetra varius. Aliquam dictum molestie urna, at sollicitudin mauris posuere et. Aliquam efficitur malesuada felis, a fringilla turpis euismod sed. Donec vel ornare ex. Sed finibus leo mauris, non finibus odio dignissim sit amet.");
+
+        final DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("NEWS");
+//
+//        ArrayList<String> education = new ArrayList<>();
+//        education.add("BSc");
+//        education.add("MPhil");
+//        education.add("PhD (UWI)");
+//
+//        ArrayList<String> areasOfInterest = new ArrayList<>();
+//        areasOfInterest.add("Computer Networking");
+//        areasOfInterest.add("Systems Designs");
+//        areasOfInterest.add("Computer Security");
+//        areasOfInterest.add("Digital Watermarking");
+//
+//        final Lecturer lecturer = new Lecturer(
+//                "Dr. Wayne Goodridge",
+//                "Programme Coordinator (Information Technology)",
+//                education,
+//                "Lecturer, Computer Science",
+//                areasOfInterest,
+//                "83948",
+//                "7272727",
+//                "Room 316",
+//                "wayne.goodridge@sta.uwi.edu",
+//                "Insert Link To Image Here");
+//        final DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("LECTURERS");
 
 
         findViewById(R.id.pushtofirebase).setOnClickListener(new View.OnClickListener()
@@ -58,7 +72,7 @@ public class TempActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                dbRef.push().setValue(lecturer);
+                dbRef.push().setValue(news);
             }
         });
     }

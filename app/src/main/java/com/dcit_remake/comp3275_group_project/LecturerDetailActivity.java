@@ -136,7 +136,7 @@ public class LecturerDetailActivity extends AppCompatActivity implements View.On
     private void emailIntent()
     {
         String recipient[] = new String[1];
-        recipient[0] = mLecturer.getEmail();
+        recipient[0] = mLecturer.getEmail().trim();
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, recipient);
