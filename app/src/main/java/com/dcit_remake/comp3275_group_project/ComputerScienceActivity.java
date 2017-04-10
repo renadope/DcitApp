@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class ComputerScienceActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
@@ -47,7 +48,51 @@ public class ComputerScienceActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        displaySelectedItem(R.id.comp3000);
+
+
+        Intent intent = getIntent();
+        String courseCode = intent.getStringExtra("CODE");
+        if (courseCode == null)
+        {
+            displaySelectedItem(R.id.homecomp);
+        }
+        if (courseCode != null)
+        {
+            if (courseCode.equalsIgnoreCase("COMP3000"))
+            {
+                displaySelectedItem(R.id.comp3000);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3150"))
+            {
+                displaySelectedItem(R.id.comp3150);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3100"))
+            {
+                displaySelectedItem(R.id.comp3100);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3250"))
+            {
+                displaySelectedItem(R.id.comp3250);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3275"))
+            {
+                displaySelectedItem(R.id.comp3275);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3550"))
+            {
+                displaySelectedItem(R.id.comp3550);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3850"))
+            {
+                displaySelectedItem(R.id.comp3850);
+            }
+            else if (courseCode.equalsIgnoreCase("COMP3950"))
+            {
+                displaySelectedItem(R.id.comp3950);
+            }
+        }
+
+
     }
 
     @Override
@@ -95,6 +140,10 @@ public class ComputerScienceActivity extends AppCompatActivity
         Bundle bundle = new Bundle();
         switch (itemId)
         {
+            case R.id.homecomp:
+                Toast.makeText(getApplicationContext(), "Home Comp", Toast.LENGTH_LONG).show();
+                fragment = new COMPCardFragment();
+                break;
             case R.id.comp3000:
                 fragment = new CompFragment();
                 bundle.putString(KEY, "COMP3000");
@@ -135,6 +184,7 @@ public class ComputerScienceActivity extends AppCompatActivity
                 bundle.putString(KEY, "COMP3950");
                 fragment.setArguments(bundle);
                 break;
+            //add comp 3990
 
         }
 

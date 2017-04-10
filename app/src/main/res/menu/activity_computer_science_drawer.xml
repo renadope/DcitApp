@@ -3,42 +3,46 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/homecomp"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Home"/>
+        <item
             android:id="@+id/comp3000"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3000" />
+            android:title="COMP 3000"/>
         <item
             android:id="@+id/comp3100"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3100" />
+            android:title="COMP 3100"/>
         <item
             android:id="@+id/comp3550"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3550" />
+            android:title="COMP 3550"/>
         <item
             android:id="@+id/comp3150"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3150" />
+            android:title="COMP 3150"/>
         <item
             android:id="@+id/comp3850"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3850" />
+            android:title="COMP 3850"/>
         <item
             android:id="@+id/comp3250"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3250" />
+            android:title="COMP 3250"/>
         <item
             android:id="@+id/comp3275"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3275" />
+            android:title="COMP 3275"/>
         <item
             android:id="@+id/comp3950"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3950" />
+            android:title="COMP 3950"/>
 
         <item
             android:id="@+id/comp3990"
             android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3990" />
+            android:title="COMP 3990"/>
     </group>
 
 </menu>

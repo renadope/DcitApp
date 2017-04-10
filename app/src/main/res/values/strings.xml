@@ -50,4 +50,5 @@
     <string name="lecturereimage">Lecturer Image</string>
     <string name="email">Email:</string>
     <string name="office_contact">Office Contact</string>
+    <string name="comp">COMP</string>
 </resources>

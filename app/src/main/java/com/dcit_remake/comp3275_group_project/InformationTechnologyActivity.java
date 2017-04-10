@@ -19,6 +19,7 @@ public class InformationTechnologyActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener
 {
     private static final String KEY = "COURSE_CODE";
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -48,7 +49,45 @@ public class InformationTechnologyActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        displaySelectedItem(R.id.info3400);
+
+
+        Intent intent = getIntent();
+        String courseCode = intent.getStringExtra("CODE");
+        if (courseCode == null)
+        {
+            displaySelectedItem(R.id.homeit);
+        }
+        if (courseCode != null)
+        {
+            if (courseCode.equalsIgnoreCase("INFO3400"))
+            {
+                displaySelectedItem(R.id.info3400);
+            }
+            else if (courseCode.equalsIgnoreCase("INFO3410"))
+            {
+                displaySelectedItem(R.id.info3410);
+            }
+            else if (courseCode.equalsIgnoreCase("INFO3415"))
+            {
+                displaySelectedItem(R.id.info3415);
+            }
+            else if (courseCode.equalsIgnoreCase("INFO3440"))
+            {
+                displaySelectedItem(R.id.info3440);
+            }
+            else if (courseCode.equalsIgnoreCase("INFO3500"))
+            {
+                displaySelectedItem(R.id.info3500);
+            }
+//            else if (courseCode.equalsIgnoreCase("INFO3425"))
+//            {
+//                displaySelectedItem(R.id.info3425);
+//            }
+            else if (courseCode.equalsIgnoreCase("INFO3435"))
+            {
+                displaySelectedItem(R.id.info3435);
+            }
+        }
     }
 
     @Override
@@ -104,6 +143,9 @@ public class InformationTechnologyActivity extends AppCompatActivity
         Bundle bundle = new Bundle();
         switch (id)
         {
+            case R.id.homeit:
+                fragment = new ITCardFragment();
+                break;
             case R.id.info3400:
                 fragment = new CompFragment();
                 bundle.putString(KEY, "INFO3400");
@@ -119,11 +161,11 @@ public class InformationTechnologyActivity extends AppCompatActivity
                 bundle.putString(KEY, "INFO3415");
                 fragment.setArguments(bundle);
                 break;
-            case R.id.info3425:
-                fragment = new CompFragment();
-                bundle.putString(KEY, "INFO3425");
-                fragment.setArguments(bundle);
-                break;
+//            case R.id.info3425:
+//                fragment = new CompFragment();
+//                bundle.putString(KEY, "INFO3425");
+//                fragment.setArguments(bundle);
+//                break;
             case R.id.info3435:
                 fragment = new CompFragment();
                 bundle.putString(KEY, "INFO3435");
@@ -134,11 +176,11 @@ public class InformationTechnologyActivity extends AppCompatActivity
                 bundle.putString(KEY, "INFO3440");
                 fragment.setArguments(bundle);
                 break;
-            case R.id.info3490:
-                fragment = new CompFragment();
-                bundle.putString(KEY, "INFO3490");
-                fragment.setArguments(bundle);
-                break;
+//            case R.id.info3490:
+//                fragment = new CompFragment();
+//                bundle.putString(KEY, "INFO3490");
+//                fragment.setArguments(bundle);
+//                break;
             case R.id.info3500:
                 fragment = new CompFragment();
                 bundle.putString(KEY, "INFO3500");

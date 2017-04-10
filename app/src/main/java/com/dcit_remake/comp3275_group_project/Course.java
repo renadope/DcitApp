@@ -20,6 +20,7 @@ class Course
     private String courseDescription;
     private String lectuereName;
     private String lecturerID;
+    private String degree;
 
     public Course()
     {
@@ -55,6 +56,33 @@ class Course
         this.courseDescription = courseDescription;
         this.lectuereName = lectuereName;
         this.lecturerID = lecturerID;
+    }
+
+    public Course(String type, String courseCode, String courseID, String courseName, int level, String semeseter, int credits, ArrayList<String> preRequsites, ArrayList<String> topics, String courseDescription, String lectuereName, String lecturerID, String degree)
+    {
+        this.type = type;
+        this.courseCode = courseCode;
+        this.courseID = courseID;
+        this.courseName = courseName;
+        this.level = level;
+        this.semeseter = semeseter;
+        this.credits = credits;
+        this.preRequsites = preRequsites;
+        this.topics = topics;
+        this.courseDescription = courseDescription;
+        this.lectuereName = lectuereName;
+        this.lecturerID = lecturerID;
+        this.degree = degree;
+    }
+
+    public String getDegree()
+    {
+        return degree;
+    }
+
+    public void setDegree(String degree)
+    {
+        this.degree = degree;
     }
 
     public String getType()
