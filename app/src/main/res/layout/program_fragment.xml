@@ -8,41 +8,45 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
         android:background="@color/primary_light"
         android:text="@string/homepage_activity_select"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="36sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="1dp"/>
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/compSciButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/titleText"
         android:layout_below="@+id/titleText"
-        android:layout_marginTop="99dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
         android:text="@string/computer_science"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="24sp"/>
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/ITButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/compSciButton"
         android:layout_below="@+id/compSciButton"
-        android:layout_marginTop="84dp"
         android:background="@color/colorPrimary"
+        android:paddingBottom="50dp"
+        android:paddingTop="50dp"
         android:text="@string/information_technology"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
-        android:textSize="24sp"/>
+        android:textSize="30sp" />
 </RelativeLayout>

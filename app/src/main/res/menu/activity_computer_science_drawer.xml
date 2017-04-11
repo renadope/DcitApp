@@ -4,8 +4,8 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/homecomp"
-            android:icon="@android:drawable/ic_menu_info_details"
-            android:title="Home"/>
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
         <item
             android:id="@+id/comp3000"
             android:icon="@android:drawable/ic_menu_info_details"
@@ -38,11 +38,6 @@
             android:id="@+id/comp3950"
             android:icon="@android:drawable/ic_menu_info_details"
             android:title="COMP 3950"/>
-
-        <item
-            android:id="@+id/comp3990"
-            android:icon="@android:drawable/ic_menu_info_details"
-            android:title="COMP 3990"/>
     </group>
 
 </menu>
